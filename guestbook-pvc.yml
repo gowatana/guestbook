@@ -1,0 +1,24 @@
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: redis-follower-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: default
+  resources:
+    requests:
+      storage: 2Gi
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: redis-leader-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: default
+  resources:
+    requests:
+      storage: 2Gi
