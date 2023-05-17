@@ -1,5 +1,8 @@
 # guestbook
 
+referenceed:
+- https://docs.vmware.com/jp/VMware-vSphere/8.0/vsphere-with-tanzu-tkg/GUID-A6348191-D403-4CDA-9183-4F4C28A6B093.html
+
 Check StorageClass.
 ```
 kubectl get sc default
