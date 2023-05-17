@@ -20,3 +20,8 @@ Create GuestBook App.
 kubectl apply -f guestbook.yml -n guestbook-01
 ```
 
+Check EXTERNAL-IP.
+```
+kubectl get svc -n guestbook-01
+```
+
