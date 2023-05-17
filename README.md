@@ -39,9 +39,14 @@ Delete PVC.
 kubectl delete -f guestbook-pvc.yml -n guestbook-01
 ```
 
-Delete PV.
+Check PV.
+
 ```
 kubectl get pv
+```
+
+(Option) Delete PV.
+```
 kubectl delete pv --wait=false PV_NAME
 kubectl patch pv PV_NAME -p '{"metadata":{"finalizers":null}}'
 ```
