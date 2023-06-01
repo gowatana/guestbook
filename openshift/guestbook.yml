@@ -152,10 +152,6 @@ spec:
         volumeMounts:
         - name: redis-leader-data
           mountPath: /data
-        securityContext:
-          allowPrivilegeEscalation: false
-          capabilities:
-            drop: ["ALL"]
       volumes: 
       - name: redis-leader-data
         persistentVolumeClaim:
